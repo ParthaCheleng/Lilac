@@ -52,13 +52,13 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
 
                     {/* Title */}
                     <ScrollReveal delay={0.3}>
-                        <h1 className="text-6xl md:text-8xl font-serif text-lilac-green font-normal mb-16 leading-tight">
+                        <h1 className="text-4xl min-[400px]:text-6xl md:text-6xl font-serif text-lilac-green font-normal mb-16 leading-tight">
                             {post.title}
                         </h1>
                     </ScrollReveal>
 
                     {/* Body Text */}
-                    <div className="text-lilac-green text-xl md:text-[22px] leading-[1.5] space-y-8 text-left w-full">
+                    <div className="text-lilac-green text-xl md:text-[22px] leading-[1.5] space-y-8 text-center md:text-left w-full">
                         {post.content.split('\n\n').map((paragraph, index) => (
                             <ScrollReveal key={index} delay={0.4 + (index * 0.1)} width="100%">
                                 <p>{paragraph}</p>
@@ -74,7 +74,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                             <ScrollReveal delay={0.6}>
                                 <Link href={`/blog/${prevPost.id}`} className="inline-flex items-center gap-4 hover:opacity-70 transition-opacity group">
                                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 md:w-8 md:h-8 transform group-hover:-translate-x-1 transition-transform duration-300"><path d="M15 19L8 12L15 5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                                    <span className="text-3xl md:text-5xl font-serif">{prevPost.title}</span>
+                                    <span className="text-3xl md:text-4xl font-serif">{prevPost.title}</span>
                                 </Link>
                             </ScrollReveal>
                         )}
@@ -83,7 +83,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                         {nextPost && (
                             <ScrollReveal delay={0.6}>
                                 <Link href={`/blog/${nextPost.id}`} className="inline-flex items-center gap-4 hover:opacity-70 transition-opacity group">
-                                    <span className="text-3xl md:text-5xl font-serif">{nextPost.title}</span>
+                                    <span className="text-3xl md:text-4xl font-serif">{nextPost.title}</span>
                                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 md:w-8 md:h-8 transform group-hover:translate-x-1 transition-transform duration-300"><path d="M9 5L16 12L9 19" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" /></svg>
                                 </Link>
                             </ScrollReveal>

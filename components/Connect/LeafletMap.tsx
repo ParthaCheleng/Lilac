@@ -3,7 +3,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 // Fix for default marker icon in Next.js
 const icon = L.icon({
@@ -30,21 +30,12 @@ export default function LeafletMap() {
     // Minneapolis coordinates
     const position: [number, number] = [44.9778, -93.2650];
 
-    const mapRef = useRef<L.Map | null>(null);
+    // Remove manual cleanup to allow MapContainer to manage lifecycle
 
-    useEffect(() => {
-        return () => {
-            // Force cleanup of the map instance
-            if (mapRef.current) {
-                mapRef.current.remove();
-                mapRef.current = null;
-            }
-        };
-    }, []);
 
     return (
         <MapContainer
-            ref={mapRef}
+            key={`${position[0]}-${position[1]}`} // Force remount if position changes, helps with initialization
             center={position}
             zoom={13}
             scrollWheelZoom={true}

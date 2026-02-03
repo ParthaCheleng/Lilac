@@ -14,7 +14,7 @@ export default function SymptomsSection() {
     return (
         <section className="flex flex-col md:flex-row w-full max-w-[1920px] mx-auto">
             {/* Left Image */}
-            <div className="w-full md:w-1/2 min-h-[500px] md:min-h-[950px] bg-gray-300 relative">
+            <div className="w-full md:w-1/2 min-h-[400px] md:min-h-[600px] bg-gray-300 relative order-1 md:order-1">
                 <ScrollReveal width="100%" className="h-full">
                     <Image
                         src="/valeriia.webp"
@@ -26,10 +26,10 @@ export default function SymptomsSection() {
             </div>
 
             {/* Right Content */}
-            <div className="w-full md:w-1/2 bg-lilac-lavender flex flex-col justify-between relative min-h-[500px] md:min-h-[950px]">
-                <div className="px-12 md:px-32 py-20 md:py-32 flex flex-col justify-center gap-10">
+            <div className="w-full md:w-1/2 bg-lilac-lavender flex flex-col justify-between relative min-h-[500px] md:min-h-[600px] order-2 md:order-2">
+                <div className="px-6 md:px-32 py-12 min-[400px]:py-20 md:py-24 flex flex-col justify-center gap-10">
                     <ScrollReveal>
-                        <h2 className="text-4xl md:text-6xl font-serif font-medium text-lilac-green leading-tight tracking-tight">
+                        <h2 className="text-3xl min-[400px]:text-4xl md:text-5xl font-serif font-medium text-lilac-green leading-tight tracking-tight">
                             You don’t have to do this all <span className="italic">alone</span>.
                         </h2>
                     </ScrollReveal>

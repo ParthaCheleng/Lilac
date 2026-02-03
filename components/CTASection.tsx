@@ -3,11 +3,11 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function CTASection() {
     return (
-        <section className="bg-[#7A7A48] py-40 px-8 md:px-12 text-center">
+        <section className="bg-[#7A7A48] py-12 min-[400px]:py-20 md:py-24 px-6 md:px-12 text-center">
             {/* Used a hex code close to the "olive/army green" seen in screenshot, adapting if needed */}
             <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
                 <ScrollReveal>
-                    <h2 className="text-4xl md:text-6xl font-serif text-lilac-cream leading-tight tracking-tight">
+                    <h2 className="text-3xl min-[400px]:text-4xl md:text-5xl font-serif text-lilac-cream leading-tight tracking-tight">
                         Get started today.
                     </h2>
                 </ScrollReveal>

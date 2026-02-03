@@ -2,9 +2,9 @@ import ScrollReveal from "../ScrollReveal";
 
 export default function BookingSection() {
     return (
-        <section className="w-full bg-[#E8E4D9] py-40 md:py-60 flex flex-col items-center text-center px-4">
+        <section className="w-full bg-lilac-beige py-24 md:py-32 flex flex-col items-center text-center px-4">
             <ScrollReveal>
-                <h2 className="text-5xl md:text-7xl font-serif font-medium text-lilac-green mb-8">
+                <h2 className="text-4xl min-[400px]:text-5xl md:text-5xl font-serif font-medium text-lilac-green mb-8">
                     Book an appointment.
                 </h2>
             </ScrollReveal>

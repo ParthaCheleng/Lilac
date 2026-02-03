@@ -15,6 +15,7 @@ const config: Config = {
                 "lilac-green": "#1A3215", // Text and dark elements
                 "lilac-beige": "#E8E4D9", // Card backgrounds
                 "lilac-lavender": "#C8C4D1", // Lavender background (approx from image)
+                "lilac-olive": "#82824C", // Office section background
             },
             fontFamily: {
                 serif: ["Outfit", "sans-serif"],

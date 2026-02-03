@@ -11,9 +11,9 @@ const Map = dynamic(() => import("./LeafletMap"), {
 
 export default function OfficeMap() {
     return (
-        <section className="w-full bg-[#82824C] text-lilac-beige grid grid-cols-1 md:grid-cols-2">
+        <section className="w-full bg-lilac-olive text-lilac-cream grid grid-cols-1 md:grid-cols-2">
             {/* Left Info */}
-            <div className="p-32 md:p-40 flex flex-col justify-center gap-12">
+            <div className="px-6 md:px-12 lg:px-20 py-16 md:py-24 lg:py-32 flex flex-col justify-center gap-8 md:gap-12">
                 <ScrollReveal>
                     <h2 className="text-4xl md:text-5xl font-serif font-medium">
                         My Office
@@ -29,7 +29,7 @@ export default function OfficeMap() {
                     </ScrollReveal>
 
                     <ScrollReveal delay={0.3}>
-                        <h2 className="text-4xl md:text-5xl font-serif font-medium mt-12 mb-6">
+                        <h2 className="text-4xl md:text-5xl font-serif font-medium mt-8 md:mt-12 mb-4 md:mb-6">
                             Hours
                         </h2>
                         <div>
@@ -41,8 +41,8 @@ export default function OfficeMap() {
             </div>
 
             {/* Right Map */}
-            <div className="w-full min-h-[500px] md:min-h-auto relative p-12 md:p-24 lg:p-32">
-                <div className="w-full h-full shadow-2xl overflow-hidden">
+            <div className="w-full min-h-[400px] md:min-h-auto relative px-6 py-16 md:p-12 lg:p-20 flex items-center justify-center">
+                <div className="w-full max-w-[800px] h-[400px] md:h-[500px] shadow-2xl overflow-hidden">
                     <Map />
                 </div>
             </div>
