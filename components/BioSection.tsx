@@ -4,8 +4,8 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function BioSection() {
     return (
-        <section className="bg-lilac-beige w-full py-20 md:py-24 lg:py-40 px-6 md:px-12">
-            <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16 md:gap-12 lg:gap-24">
+        <section className="bg-lilac-beige w-full py-20 md:py-24 lg:py-40 px-6 md:px-12 overflow-hidden">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16 md:gap-12 lg:gap-24 relative">
 
                 {/* LEFT TEXT */}
                 <div className="flex flex-col gap-6 max-w-xl mx-auto md:mx-0 items-start text-left order-2 md:order-1">
@@ -22,7 +22,7 @@ export default function BioSection() {
                     </ScrollReveal>
 
                     <ScrollReveal delay={0.4} width="100%">
-                        <Link href="/connect" className="mt-12 md:mt-12 lg:mt-[5.5rem] mx-auto md:mx-0 block w-fit border border-lilac-green px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-lilac-green hover:text-lilac-beige transition-colors duration-300 font-bold">
+                        <Link href="/connect" className="mt-12 md:mt-12 lg:mt-[5.5rem] mx-auto md:ml-32 lg:ml-48 block w-fit border border-lilac-green px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-lilac-green hover:text-lilac-beige transition-colors duration-300 font-bold">
                             Let’s Chat →
                         </Link>
                     </ScrollReveal>
@@ -46,7 +46,7 @@ export default function BioSection() {
                             className="
                             absolute
                             bottom-[-2rem] right-0
-                            md:bottom-[-2rem] md:right-[-2rem] lg:bottom-[-6rem] lg:right-[-12rem]
+                            md:bottom-[-2rem] md:right-[-2rem] lg:bottom-[-6rem] lg:right-[-8rem]
                             w-32 h-32 md:w-[250px] md:h-[250px] lg:w-[400px] lg:h-[400px]
                             rounded-full
                             overflow-hidden
